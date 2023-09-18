@@ -20,12 +20,17 @@ body {
     font-family: 'DM Sans', sans-serif;
     letter-spacing: -0.5px;
     color: $page-text-color;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
 }
 
 .container {
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1200px;
+
 }
 
 // nav
@@ -72,10 +77,8 @@ body {
         &:hover {
             opacity: 0.8;
 
-        }
-
-        &--active {
             &::after {
+                position: relative;
                 content: "";
                 display: block;
                 height: 2px;
@@ -197,7 +200,7 @@ body {
         &__img {
             border-radius: 10px;
             min-height: 250px;
-            
+
         }
 
         &__title {
@@ -206,10 +209,11 @@ body {
             font-size: 24px;
             line-height: 1.3;
             color: $page-text-color;
-            &::before{
+
+            &::before {
                 content: "";
                 display: block;
-                background-color : $black-border;
+                background-color: $black-border;
                 width: 100%;
                 height: 1px;
             }
@@ -240,7 +244,8 @@ body {
     & p+p {
         margin-bottom: 30px;
     }
-    h2{
+
+    h2 {
         font-weight: 700;
         margin-bottom: 30px;
     }
@@ -265,11 +270,41 @@ body {
             position: relative;
             top: 1px;
         }
+    }
+}
+
+//skills
+
+.content {
+    .title-2 {
+        font-size: 18px;
+        line-height: 1.5;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: $page-text-color;
 
 
+
+    &p+p {
+        margin-bottom: 10px;
     }
 
 }
+
 
 //footer
 
@@ -277,6 +312,7 @@ body {
     background-color: $dark-bg;
     padding: 40px 0 20px;
     color: $header-text;
+    margin-top: auto;
 
     .social {
         display: flex;
