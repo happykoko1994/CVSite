@@ -4,13 +4,20 @@
 //font-family: 'DM Sans', sans-serif;
 //font-family: 'Poppins', sans-serif;
 
+$black : #171718;
+$black-border : #171718;
+$purp : #5C62EC;
+$white : #fff;
+
+$dark-bg : $black;
+$dark-bord : $black-border;
+$accent : $purp;
+$header-text : $white;
+
 html,
 body {
     font-family: 'DM Sans', sans-serif;
 }
-
-$mc : #171718;
-$ul : #5C62EC;
 
 .container {
     margin: 0 auto;
@@ -22,9 +29,9 @@ $ul : #5C62EC;
 
 .nav {
     padding: 20px 0;
-    border-bottom: 1px solid #26292D;
-    background-color: $mc;
-    color: #fff;
+    border-bottom: 1px solid $dark-bord;
+    background-color: $dark-bg;
+    color: $header-text;
 
     &-row {
         display: flex;
@@ -35,7 +42,7 @@ $ul : #5C62EC;
         flex-wrap: wrap;
 
         .logo {
-            color: #fff;
+            color: $wh;
             font-size: 24px;
             font-family: 'Poppins', sans-serif;
 
@@ -55,7 +62,7 @@ $ul : #5C62EC;
     font-family: 'Poppins', sans-serif;
 
     &__link {
-        color: #fff;
+        color: $header-text;
 
         &--active {
             &::after {
@@ -63,7 +70,7 @@ $ul : #5C62EC;
                 display: block;
                 height: 2px;
                 width: 100%;
-                background-color: $ul;
+                background-color: $accent;
             }
         }
     }
