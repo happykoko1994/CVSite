@@ -273,6 +273,13 @@ body {
   line-height: 1.3;
   color: #171718;
 }
+.section .project__title::before {
+  content: "";
+  display: block;
+  background-color: #26292D;
+  width: 100%;
+  height: 1px;
+}
 
 .project-details {
   margin: 0 auto;
