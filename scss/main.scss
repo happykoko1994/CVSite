@@ -23,13 +23,14 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    
+
 }
 
 .container {
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1200px;
+    min-width: 320px;
 
 }
 
@@ -102,7 +103,7 @@ body {
     color: $header-text;
 
     &__wrapper {
-        min-width: 660px;
+        min-width: 320px;
         max-width: 1200px;
         padding: 0 15px;
 
@@ -112,7 +113,7 @@ body {
         font-size: 40px;
         font-weight: 700;
         line-height: 1.4;
-
+        
         & strong {
             font-size: 60px;
             font-weight: 600;
@@ -123,18 +124,7 @@ body {
             color: $accent;
         }
 
-        &::after {
-            content: "";
-            position: absolute;
-            display: block;
-            height: 300px;
-            width: 300px;
-            border: 2px solid $white;
-            border-radius: 100%;
-            left: 55%;
-            top: 24%;
-            opacity: 0.5;
-        }
+        
     }
 
     &__text {
@@ -175,6 +165,11 @@ body {
 .section {
     padding: 40px 0;
 
+    .projects-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
     .title-1 {
         margin-bottom: 40px;
         font-size: 60px;
@@ -189,6 +184,7 @@ body {
         flex-wrap: wrap;
         column-gap: 30px;
         row-gap: 30px;
+        justify-content: center;
     }
 
     .project {
@@ -274,6 +270,11 @@ body {
 }
 
 //skills
+.skills-wrapper {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
 
 .content {
     .title-2 {
