@@ -262,7 +262,9 @@ body {
 }
 .section .project__img {
   border-radius: 10px;
-  min-height: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .section .project__title {
   padding: 15px 20px 25px;
