@@ -263,6 +263,7 @@ body {
 .section .project__img {
   border-radius: 10px;
   height: 250px;
+  max-width: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
