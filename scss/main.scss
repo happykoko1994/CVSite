@@ -34,6 +34,26 @@ body {
 
 }
 
+.up-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    background: url(../images/arrow.png);
+    background-size: cover;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
+
+    &.active {
+        bottom: 40px;
+        visibility: visible;
+        opacity: 0.6;
+    }
+}
+
 // nav
 
 .nav {
