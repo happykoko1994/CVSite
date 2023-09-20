@@ -202,6 +202,16 @@ body {
   font-style: normal;
   color: rgb(92, 98, 236);
 }
+.header__title::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  filter: blur(130px);
+  top: 45%;
+  left: 60%;
+  background-color: rgb(92, 98, 236);
+}
 .header__text {
   margin-bottom: 40px;
   font-size: 18px;
