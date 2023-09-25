@@ -285,6 +285,7 @@ body {
 }
 .section .project {
   max-width: 370px;
+  min-width: 300px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.25);
@@ -295,6 +296,7 @@ body {
   color: rgb(92, 98, 236);
 }
 .section .project__img {
+  width: 100%;
   border-radius: 10px;
   height: 250px;
   max-width: 300px;
